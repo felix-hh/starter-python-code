@@ -8,7 +8,7 @@ https://jordanthomasg.medium.com/python-development-on-macos-with-pyenv-2509c694
 
 - Install the Python environment manager with the instructions above
   - Ensure you do the steps right for the particular `zsh` or `bash` shell you are using.
-- Install Python 2.7 and symlink it 
+- (Optional) Install Python 2.7 and symlink it 
 - Set a Python global version e.g. Python 3.10.
 
 ## Environment management through Poetry
