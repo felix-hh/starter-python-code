@@ -5,7 +5,7 @@ This repo has all of the dependencies that you need to run a basic Jupyter Noteb
 Update project name and description in `pyproject.toml`.
 
 ```bash
-poetry install && poetry shell
+poetry install --with=dev && poetry shell
 pre-commit install
 ```
 
