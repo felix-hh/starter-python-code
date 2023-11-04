@@ -2,6 +2,8 @@
 This repo has all of the dependencies that you need to run a basic Jupyter Notebook with some of the usual data processing tools. To set up from scratch do as follows.
 
 ## Get started
+Update project name and description in `pyproject.toml`.
+
 ```bash
 poetry install && poetry shell
 pre-commit install
