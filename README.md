@@ -1,5 +1,11 @@
-# General purpose Python starter code
+# General purpose Python starter code with Jupyter and pre-commit
 This repo has all of the dependencies that you need to run a basic Jupyter Notebook with some of the usual data processing tools. To set up from scratch do as follows.
+
+## Get started
+```bash
+poetry install && poetry shell
+pre-commit install
+```
 
 ## Python installation through Pyenv
 Install Pyenv to manage installing multiple versions of Python in a clean way. A version manager is much cleaner than installing Python directly and will save you headaches solving version conflicts long term.
@@ -8,7 +14,7 @@ https://jordanthomasg.medium.com/python-development-on-macos-with-pyenv-2509c694
 
 - Install the Python environment manager with the instructions above
   - Ensure you do the steps right for the particular `zsh` or `bash` shell you are using.
-- (Optional) Install Python 2.7 and symlink it 
+- (Optional) Install Python 2.7 and symlink it
 - Set a Python global version e.g. Python 3.10.
 
 ## Environment management through Poetry
@@ -24,7 +30,7 @@ Then do `poetry install` to install the environment in this repo and poetry shel
 
 ## VS Code setup
 A tricky part of the process is getting Jupyter Notebook to run on VS Code directly using this environment, but if you do you get the nice autocomplete and type checking features of VS Code when coding notebooks. Here's a rough guide of the steps to do this:
-- Ensure that you installed the environment following the steps above. 
+- Ensure that you installed the environment following the steps above.
 - Install the relevant Python extensions. These would be the `Python` and `Jupyter` extensions.
 - Run `poetry env info`. This will tell you the location of the Python interpreter, which will be the `Executable` attribute in the `Virtualenv` section in the output. Copy the interpreter path.
 - `Cmd+Shift+P` Select Python Interpreter in VS Code. Select "Enter interpreter path". Then enter the path you got from the previous step. This makes VS Code recognize your Python kernel from now on on `.py` files and `.ipynb` files.
