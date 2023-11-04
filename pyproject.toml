@@ -15,8 +15,10 @@ matplotlib = "^3.7.1"
 tqdm = "^4.65.0"
 
 [tool.poetry.group.dev.dependencies]
-mypy = "^1.1.1"
-
+ruff = "^0.0.291"
+pre-commit = "^3.4.0"
+black = {extras = ["jupyter"], version = "^23.9.1"}
+mypy = "^1.5.1"
 
 [build-system]
 requires = ["poetry-core"]
